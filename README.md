@@ -2,6 +2,13 @@
 
 이 프로젝트는 웹사이트의 **기존 랜딩 페이지(old_page)** 와 **새로운 랜딩 페이지(new_page)** 중 new_page가 더 높은 전환율을 가지는지를 분석하기 위한 A/B 테스트 결과를 다룹니다.
 
+## Data Columns
+- user_id : 사용자 ID
+- timestamp : 타임 스탬프(시간 표기)
+- group : 사용자가 control(기존 버전) 혹은 treatment(변화 버전) 그룹에 속하는 지 여부
+- landing_page : 사용자가 최초로 보게 되는 페이지가 new_page 혹은 old_page인지 여부
+- converted : 사용자가 0(전환하지 않음) 혹은 1(전환)인지 여부
+
 ## 📊 문제 정의
 
 사용자는 무작위로 다음 두 그룹 중 하나에 배정됩니다:
